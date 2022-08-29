@@ -41,7 +41,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: 
-           ${{ secrets.DOCKER_HUB_USERNAME }}/henry_dev_store_react:latest
+           ${{ secrets.DOCKER_HUB_USERNAME }}/henry_dev_nodejs_demo_react:latest
           cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/henry_dev_nodejs_demo_react:buildcache
           cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/henry_dev_nodejs_demo_react:buildcache,mode=max
           
