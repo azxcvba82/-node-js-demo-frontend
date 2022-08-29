@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-react-nodejs-demo-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: store-react-nodejs-demo-frontend
+  template:
+    metadata:
+      labels:
+        app: store-react-nodejs-demo-frontend
+    spec:
+      containers:
+      - name: store-react-nodejs-demo-frontend
+        image: docker.io/azxcvba81/henry_dev_nodejs_demo_react:latest
