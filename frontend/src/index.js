@@ -4,25 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import axios from 'axios';
-import {
-  environment
-} from "./environment";
-
-// interceptors start
-axios.interceptors.request.use(
-  request =>{
-    if(request.url.startsWith(environment.production.apiEndpoint + '/api/')===true){
-      const user = JSON.parse(localStorage.getItem("user"));
-    request.headers.common.Authorization = `Bearer ${user.token}`
-    }
-    return request;
-  },
-  error =>{
-    return Promise.reject(error)
-  }
-);
-// interceptors end
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

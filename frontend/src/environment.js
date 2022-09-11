@@ -2,7 +2,7 @@
 
 export const environment =  {
   production : {
-    apiEndpoint: "http://localhost:80",
+    apiEndpoint: "https://node-js-demo-api.azxcvba99.net",
     blobStorage:  "https://staticdatahenry.blob.core.windows.net/images/"
   },
   develop : {
