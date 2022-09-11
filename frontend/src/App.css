@@ -1,0 +1,49 @@
+.box {
+  font-family: "微軟正黑體";
+  margin: 0 auto;
+  max-width: 450px;
+  text-align: center;
+}
+
+.form-input-password {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.loingBtn {
+  width: 20%;
+  padding: 5px;
+  margin: 5px auto;
+  background-color: #1db954;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.dashboardBtn {
+  width: 30%;
+  padding: 5px;
+  margin: 5px auto;
+  background-color: #1db954;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  transition: 0.4s;
+}
+
+
+.loingBtn:hover {
+  background-color: #1dd15d;
+}
+
+.dashboardBtn:hover {
+  background-color: #1dd15d;
+}
+
+/* sugnup modal */
+#register {
+padding: 20px 10px;
+}

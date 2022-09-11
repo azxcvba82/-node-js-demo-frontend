@@ -15,3 +15,7 @@ spec:
       containers:
       - name: react-nodejs-demo-frontend
         image: docker.io/azxcvba81/henry_dev_nodejs_demo_react:latest
+      tolerations:
+      - key: "kubernetes.azure.com/scalesetpriority"
+        operator: "Exists"
+        effect: "NoSchedule"
