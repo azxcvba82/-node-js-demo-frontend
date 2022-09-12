@@ -41,6 +41,7 @@ export default function Login() {
     LoginService.ssoLogin(state, accessToken,idToken)
       .then((response) => {
         PageGuardService.createCookie(response.data.email,response.data.token,response.data.expiresAt);
+        history.push('/dashboard', {replace: true}, [history]);
       })
       .catch((error) => {
         setIsError(true);
