@@ -2,7 +2,8 @@
 
 export const environment =  {
   production : {
-    apiEndpoint: "https://node-js-demo-api.azxcvba99.net",
+    apiEndpoint: "https://app-express-nodejs-demo-backend.azurewebsites.net",
+    //apiEndpoint: "http://localhost:80",
     blobStorage:  "https://staticdatahenry.blob.core.windows.net/images/"
   },
   develop : {
