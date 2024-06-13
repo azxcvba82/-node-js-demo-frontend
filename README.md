@@ -9,9 +9,8 @@
 ## SSO Test Material
 - Google: 
     no require specified account
-- Facebook: 
-    account: open_edpejko_user@tfbnw.net
-    password: nodeJS4fun#
+- Facebook:
+     TBD
 
 ## Reference
 - [React](https://reactjs.org/)
